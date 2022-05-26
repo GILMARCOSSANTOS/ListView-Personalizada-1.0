@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imgVw_produto_itemProduto"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtVw_nomeProduto_itemProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Produto"
+        app:layout_constraintStart_toEndOf="@id/imgVw_produto_itemProduto"
+        app:layout_constraintTop_toTopOf="@id/imgVw_produto_itemProduto" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txtVw_precoProduto_itemProduto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="R$ 0,00"
+       app:layout_constraintStart_toEndOf="@id/imgVw_produto_itemProduto"
+        app:layout_constraintTop_toBottomOf="@id/txtVw_nomeProduto_itemProduto" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
