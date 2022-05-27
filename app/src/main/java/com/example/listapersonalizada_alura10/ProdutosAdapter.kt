@@ -19,7 +19,7 @@ class ProdutosAdapter(private val contexto: Context, private val listaProduto: L
         val produtos = listaProduto[position]
 
         layout.txtVw_nomeProduto_itemProduto.text = produtos.nome
-        layout.txtVw_precoProduto_itemProduto.text = "R$${produtos.preco}"
+        layout.txtVw_precoProduto_itemProduto.text = "R$ ${produtos.preco}"
         layout.imgVw_produto_itemProduto.setImageResource(produtos.imagem)
 
         return layout
